@@ -1,12 +1,13 @@
 import Stopwatch from './components/Stopwatch';
+import VirtualizedInfiniteList from './components/infinitescroll_chatgpt_implementation';
 
 import './App.css';
-import VirtualizedInfiniteList from './components/infinitescroll_chatgpt_implementation';
+import WordCounter from './components/wordCounter';
 
 function App() {
   return (
     <>
-      <VirtualizedInfiniteList/>
+      <WordCounter/>
     </>
   );
 }
