@@ -3,11 +3,12 @@ import VirtualizedInfiniteList from './components/infinitescroll_chatgpt_impleme
 
 import './App.css';
 import WordCounter from './components/wordCounter';
+import InputBoxContainer from './components/OtpInput';
 
 function App() {
   return (
     <>
-      <WordCounter/>
+      <InputBoxContainer/>
     </>
   );
 }
