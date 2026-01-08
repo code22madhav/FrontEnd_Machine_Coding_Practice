@@ -4,11 +4,12 @@ import VirtualizedInfiniteList from './components/infinitescroll_chatgpt_impleme
 import './App.css';
 import WordCounter from './components/wordCounter';
 import InputBoxContainer from './components/OtpInput';
+import EMI_Calculator from './components/EMI_Calculator';
 
 function App() {
   return (
     <>
-      <InputBoxContainer/>
+      <EMI_Calculator/>
     </>
   );
 }
