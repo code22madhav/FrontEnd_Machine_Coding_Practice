@@ -3,8 +3,8 @@ const Card = ({ name, ref }) => {
     <div
       ref={ref}
       style={{
-        width: "50px",
-        height: "50px",
+        width: "250px",
+        height: "250px",
         border: "1px solid black",
         margin: "5px",
       }}

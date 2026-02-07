@@ -5,11 +5,12 @@ import './App.css';
 import WordCounter from './components/wordCounter';
 import InputBoxContainer from './components/OtpInput';
 import EMI_Calculator from './components/EMI_Calculator';
+import Pagination from './components/Pagination';
 
 function App() {
   return (
     <>
-      <EMI_Calculator/>
+      <Pagination/>
     </>
   );
 }
