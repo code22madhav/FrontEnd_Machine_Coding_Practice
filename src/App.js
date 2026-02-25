@@ -6,11 +6,12 @@ import WordCounter from './components/wordCounter';
 import InputBoxContainer from './components/OtpInput';
 import EMI_Calculator from './components/EMI_Calculator';
 import Pagination from './components/Pagination';
+import ProgressBar from './components/progressbar';
 
 function App() {
   return (
     <>
-      <Pagination/>
+      <ProgressBar value={25}/>
     </>
   );
 }
