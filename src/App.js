@@ -7,11 +7,12 @@ import InputBoxContainer from './components/OtpInput';
 import EMI_Calculator from './components/EMI_Calculator';
 import Pagination from './components/Pagination';
 import ProgressBar from './components/progressbar';
+import CurrencyConverter from './components/CurrencyConverter';
 
 function App() {
   return (
     <>
-      <ProgressBar value={25}/>
+      <CurrencyConverter/>
     </>
   );
 }
