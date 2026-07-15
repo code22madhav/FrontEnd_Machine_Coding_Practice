@@ -38,6 +38,29 @@ Function.prototype.mybind=function(thisArg,...args){
     return boundFunction;
 }
 
+Function.prototype.mybind1=function(thisArg,...args){
+    if(typeof(this)!=='function'){
+        throw new  TypeError("Caller not of type function");
+    }
+    const self=this;
+    function boundFunction(...bindargs){
+        const key=Symbol()
+        if(this instanceof boundFunction){
+            this[key]=self;
+            const result=this[key](...bindargs,...args);
+            delete this[key];
+            return result
+        }else{
+            thisArg[key]=self;
+            const result=thisArg[key](...bindargs,...args);
+            delete thisArg[key];
+            return result
+        }
+    }
+    boundFunction.prototype = Object.create(self.prototype);
+    return boundFunction;
+}
+
 const func=person.mybind(obj);
 const ob=new func('pathak')
 console.log(ob)
